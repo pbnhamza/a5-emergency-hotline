@@ -17,12 +17,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/style.css" />
     <title>Emergency service</title>
   </head>
-  <body class="mx-auto max-w-[1920px] hind-madurai">
+  <body class="mx-auto max-w-[1920px] hind-madurai bg-[#f5fff6]">
     <!-- nav section -->
-    <nav class=" mx-auto py-6 px-15">
+    <nav class="mx-auto py-6 px-15 .background-nav">
       <div class="navbar flex items-center justify-between max-sm:flex-col">
         <div class="flex items-center gap-2.5 justify-center">
           <img class="w-[60px] h-[60px]" src="./assets/logo.png" alt="" />
@@ -34,15 +34,14 @@
         <div class="flex items-center justify-between gap-5 max-sm:pt-6">
           <div class="flex justify-center items-center gap-2.5 p-3">
             <h1 id="icon" class="text-xl font-bold">0</h1>
-            <img class="w-[30px] h-[30px]" src="./assets/heart.png" alt="" />
+            <img class="w-[35px] h-[35px]" src="./assets/heart.png" alt="" />
           </div>
           <div class="flex justify-center items-center gap-2.5 p-3">
             <h1 id="coin" class="text-xl font-bold">100</h1>
-            <img class="w-[24px] h-[24px]" src="./assets/coin.png" alt="" />
+            <img class="w-[35px] h-[35px]" src="./assets/coin.png" alt="" />
           </div>
           <div>
-            <button 
-            
+            <button
               class="py-3 px-9 bg-[#00a63e] rounded-4xl text-white text-xl font-bold"
             >
               <span id="copy-count"> 0 </span> Copy
@@ -52,7 +51,7 @@
       </div>
     </nav>
     <!-- banner section -->
-    <section >
+    <section class="mx-auto max-w-[1920px]">
       <div
         class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] hind-madurai py-6 px-15"
       >
@@ -75,19 +74,19 @@
       </div>
     </section>
     <!-- card section -->
-    <section class="mx-auto px-15 py-12 ">
-      <section class=" grid grid-cols-12 bg-[#f5fff6] gap-[30px]">
+    <section class="mx-auto max-w-[1920px] px-15 py-12">
+      <section class="grid md:grid-cols-12 gap-[30px] bg-[#f5fff6]">
         <!-- Card section Left side -->
-        <section class="col-span-9 ">
-          <div class="grid  grid-cols-1 sm:grid-cols-1 md:grid-cols-3  gap-[30px]  ">
+        <section class="col-span-9">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-[30px]">
             <!-- National Emergency Number -->
-            <div class="shadow-sm background p-8 rounded-sm ">
+            <div class="shadow-sm background p-8 rounded-sm">
               <figure class="flex justify-between items-center">
                 <div class="w-[60px] h-[60px] rounded-2xl bg-[#ffe3e2]">
                   <img class="p-4" src="./assets/emergency.png" alt="" />
                 </div>
-                <div class=" icon-btn cursor-pointer">
-                  <i class=" fa-regular fa-heart text-2xl"></i>
+                <div class="icon-btn cursor-pointer">
+                  <i class="fa-regular fa-heart text-2xl"></i>
                 </div>
               </figure>
               <div class="card">
@@ -96,27 +95,29 @@
                   <p class="text-[#5C5C5C]">National Emergency</p>
                 </div>
                 <div class="mt-6">
-                  <h1  class="copy-number  font-bold text-3xl">999</h1>
-                  <button class="text-[#5C5C5C] rounded-xl bg-[#F2F2F2] py-[6px] px-4">All</button> 
+                  <h1 class="copy-number font-bold text-3xl">999</h1>
+                  <button
+                    class="text-[#5C5C5C] rounded-xl bg-[#F2F2F2] py-[6px] px-4"
+                  >
+                    All
+                  </button>
                 </div>
                 <div class="flex justify-between gap-2 mt-6">
                   <button
-                  
-                    class="btn copy-btn w-[50%] text-[16px] text-[#5C5C5C] border-1 border-[#D4D6D5] rounded-[8px] h-[40px]"
+                    class="hover:bg-neutral-700 hover:text-white btn copy-btn w-[50%] text-[16px] text-[#5C5C5C] border-1 border-[#D4D6D5] rounded-[8px] h-[40px]"
                   >
                     <span><i class="fa-solid fa-copy"></i></span> Copy
                   </button>
                   <button
-                  
-                    class="call-btn btn w-[50%] text-[16px] text-white bg-[#00A63E] rounded-[8px] h-[40px]"
+                    class="hover:bg-neutral-700 hover:text-white call-btn btn w-[50%] text-[16px] text-white bg-[#00A63E] rounded-[8px] h-[40px]"
                   >
                     <span><i class="fa-solid fa-phone"></i></span> Call
                   </button>
                 </div>
               </div>
-            </div>    
+            </div>
             <!-- Ambulance Service -->
-            <div class="shadow-sm background p-8 rounded-sm ">
+            <div class="shadow-sm background p-8 rounded-sm">
               <figure class="flex justify-between items-center">
                 <div class="w-[60px] h-[60px] rounded-2xl bg-[#ffe3e2]">
                   <img class="p-4" src="./assets/ambulance.png" alt="" />
@@ -128,28 +129,32 @@
               <div class="">
                 <div class="mt-4">
                   <h2 class="text-2xl font-bold">Ambulance Service</h2>
-                  <p class="text-[#5C5C5C]">Ambulance</p>                  
+                  <p class="text-[#5C5C5C]">Ambulance</p>
                 </div>
                 <div class="mt-6">
-                  <h1  class="copy-number font-bold text-3xl">1994-999999</h1>             
-                  <button class="text-[#5C5C5C] rounded-xl bg-[#F2F2F2] py-[6px] px-4">Health</button> 
+                  <h1 class="copy-number font-bold text-3xl">1994-999999</h1>
+                  <button
+                    class="text-[#5C5C5C] rounded-xl bg-[#F2F2F2] py-[6px] px-4"
+                  >
+                    Health
+                  </button>
                 </div>
                 <div class="flex justify-between gap-2 mt-6">
-                  <button                  
-                    class="btn copy-btn w-[50%] text-[16px] text-[#5C5C5C] border-1 border-[#D4D6D5] rounded-[8px] h-[40px]"
+                  <button
+                    class="hover:bg-neutral-700 hover:text-white btn copy-btn w-[50%] text-[16px] text-[#5C5C5C] border-1 border-[#D4D6D5] rounded-[8px] h-[40px]"
                   >
                     <span><i class="fa-solid fa-copy"></i></span> Copy
                   </button>
                   <button
-                    class="call-btn btn w-[50%] text-[16px] text-white bg-[#00A63E] rounded-[8px] h-[40px]"
+                    class="hover:bg-neutral-700 hover:text-white call-btn btn w-[50%] text-[16px] text-white bg-[#00A63E] rounded-[8px] h-[40px]"
                   >
                     <span><i class="fa-solid fa-phone"></i></span> Call
                   </button>
                 </div>
               </div>
-            </div>   
+            </div>
             <!-- Electricity Helpline -->
-            <div class="shadow-sm background p-8 rounded-sm ">
+            <div class="shadow-sm background p-8 rounded-sm">
               <figure class="flex justify-between items-center">
                 <div class="w-[60px] h-[60px] rounded-2xl bg-[#ffe3e2]">
                   <img class="p-4" src="./assets/emergency.png" alt="" />
@@ -161,22 +166,24 @@
               <div class="">
                 <div class="mt-4">
                   <h2 class="text-2xl font-bold">Electricity Helpline</h2>
-                  <p class="text-[#5C5C5C]">Electricity Outage</p>                     
+                  <p class="text-[#5C5C5C]">Electricity Outage</p>
                 </div>
                 <div class="mt-6">
-                  <h1 
-                   class=" copy-number font-bold text-3xl">16216</h1>
-                  <button class="text-[#5C5C5C] rounded-xl bg-[#F2F2F2] py-[6px] px-4">Electricity</button>                
+                  <h1 class="copy-number font-bold text-3xl">16216</h1>
+                  <button
+                    class="text-[#5C5C5C] rounded-xl bg-[#F2F2F2] py-[6px] px-4"
+                  >
+                    Electricity
+                  </button>
                 </div>
                 <div class="flex justify-between gap-2 mt-6">
                   <button
-                 
-                    class="btn copy-btn w-[50%] text-[16px] text-[#5C5C5C] border-1 border-[#D4D6D5] rounded-[8px] h-[40px]"
+                    class="hover:bg-neutral-700 hover:text-white btn copy-btn w-[50%] text-[16px] text-[#5C5C5C] border-1 border-[#D4D6D5] rounded-[8px] h-[40px]"
                   >
                     <span><i class="fa-solid fa-copy"></i></span> Copy
                   </button>
                   <button
-                    class="call-btn btn w-[50%] text-[16px] text-white bg-[#00A63E] rounded-[8px] h-[40px]"
+                    class="hover:bg-neutral-700 hover:text-white call-btn btn w-[50%] text-[16px] text-white bg-[#00A63E] rounded-[8px] h-[40px]"
                   >
                     <span><i class="fa-solid fa-phone"></i></span> Call
                   </button>
@@ -184,7 +191,7 @@
               </div>
             </div>
             <!-- Police Helpline Number -->
-            <div class="shadow-sm background p-8 rounded-sm ">
+            <div class="shadow-sm background p-8 rounded-sm">
               <figure class="flex justify-between items-center">
                 <div class="w-[60px] h-[60px] rounded-2xl bg-[#DFEFFF]">
                   <img class="p-4" src="./assets/police.png" alt="" />
@@ -195,22 +202,25 @@
               </figure>
               <div class="">
                 <div class="mt-4">
-                  <h2 class="text-2xl font-bold">Police Helpline Number</h2>      
-                    <p class="text-[#5C5C5C]">Police</p>               
-                  
+                  <h2 class="text-2xl font-bold">Police Helpline Number</h2>
+                  <p class="text-[#5C5C5C]">Police</p>
                 </div>
                 <div class="mt-6">
                   <h1 class="copy-number font-bold text-3xl">999</h1>
-                <button class="text-[#5C5C5C] rounded-xl bg-[#F2F2F2] py-[6px] px-4">Police</button> 
+                  <button
+                    class="text-[#5C5C5C] rounded-xl bg-[#F2F2F2] py-[6px] px-4"
+                  >
+                    Police
+                  </button>
                 </div>
                 <div class="flex justify-between gap-2 mt-6">
-                  <button                 
-                    class="btn copy-btn w-[50%] text-[16px] text-[#5C5C5C] border-1 border-[#D4D6D5] rounded-[8px]  h-[40px]"
+                  <button
+                    class="hover:bg-neutral-700 hover:text-white btn copy-btn w-[50%] text-[16px] text-[#5C5C5C] border-1 border-[#D4D6D5] rounded-[8px] h-[40px]"
                   >
                     <span><i class="fa-solid fa-copy"></i></span> Copy
                   </button>
                   <button
-                    class="call-btn btn w-[50%] text-[16px] text-white bg-[#00A63E] rounded-[8px]  h-[40px]"
+                    class="hover:bg-neutral-700 hover:text-white call-btn btn w-[50%] text-[16px] text-white bg-[#00A63E] rounded-[8px] h-[40px]"
                   >
                     <span><i class="fa-solid fa-phone"></i></span> Call
                   </button>
@@ -218,7 +228,7 @@
               </div>
             </div>
             <!-- Women & Child Helpline -->
-            <div class="shadow-sm background p-8 rounded-sm ">
+            <div class="shadow-sm background p-8 rounded-sm">
               <figure class="flex justify-between items-center">
                 <div class="w-[60px] h-[60px] rounded-2xl bg-[#ffe3e2]">
                   <img class="p-4" src="./assets/emergency.png" alt="" />
@@ -233,17 +243,21 @@
                   <p class="text-[#5C5C5C]">Women & Child Helpline</p>
                 </div>
                 <div class="mt-6">
-                  <h1 class="copy-number font-bold text-3xl">109</h1>                  
-                  <button class="text-[#5C5C5C] rounded-xl bg-[#F2F2F2] py-[6px] px-4">Help</button> 
+                  <h1 class="copy-number font-bold text-3xl">109</h1>
+                  <button
+                    class="text-[#5C5C5C] rounded-xl bg-[#F2F2F2] py-[6px] px-4"
+                  >
+                    Help
+                  </button>
                 </div>
                 <div class="flex justify-between gap-2 mt-6">
-                  <button                   
-                    class="btn copy-btn w-[50%] text-[16px] text-[#5C5C5C] border-1 border-[#D4D6D5] rounded-[8px]  h-[40px]"
+                  <button
+                    class="hover:bg-neutral-700 hover:text-white btn copy-btn w-[50%] text-[16px] text-[#5C5C5C] border-1 border-[#D4D6D5] rounded-[8px] h-[40px]"
                   >
                     <span><i class="fa-solid fa-copy"></i></span> Copy
                   </button>
                   <button
-                    class="call-btn btn  w-[50%] text-[16px] text-white bg-[#00A63E] rounded-[8px] h-[40px]"
+                    class="hover:bg-neutral-700 hover:text-white call-btn btn w-[50%] text-[16px] text-white bg-[#00A63E] rounded-[8px] h-[40px]"
                   >
                     <span><i class="fa-solid fa-phone"></i></span> Call
                   </button>
@@ -251,7 +265,7 @@
               </div>
             </div>
             <!-- Brac Helpline -->
-            <div class="shadow-sm background p-8 rounded-sm ">
+            <div class="shadow-sm background p-8 rounded-sm">
               <figure class="flex justify-between items-center">
                 <div class="w-[60px] h-[60px] rounded-2xl bg-[#ffe3e2]">
                   <img class="p-4" src="./assets/brac.png" alt="" />
@@ -262,21 +276,25 @@
               </figure>
               <div class="">
                 <div class="mt-4">
-                  <h2 class="text-2xl font-bold">Brac Helpline</h2>    
+                  <h2 class="text-2xl font-bold">Brac Helpline</h2>
                   <p class="text-[#5C5C5C]">Brac</p>
                 </div>
                 <div class="mt-6">
                   <h1 class="copy-number font-bold text-3xl">16445</h1>
-                  <button class="text-[#5C5C5C] rounded-xl bg-[#F2F2F2] py-[6px] px-4">NGO</button>
+                  <button
+                    class="text-[#5C5C5C] rounded-xl bg-[#F2F2F2] py-[6px] px-4"
+                  >
+                    NGO
+                  </button>
                 </div>
                 <div class="flex justify-between gap-2 mt-6">
-                  <button                   
-                    class="btn copy-btn w-[50%] text-[16px] text-[#5C5C5C] border-1 border-[#D4D6D5] rounded-[8px]  h-[40px]"
+                  <button
+                    class="hover:bg-neutral-700 hover:text-white btn copy-btn w-[50%] text-[16px] text-[#5C5C5C] border-1 border-[#D4D6D5] rounded-[8px] h-[40px]"
                   >
                     <span><i class="fa-solid fa-copy"></i></span> Copy
                   </button>
                   <button
-                    class="call-btn btn w-[50%] text-[16px] text-white bg-[#00A63E] rounded-[8px] h-[40px]"
+                    class="hover:bg-neutral-700 hover:text-white call-btn btn w-[50%] text-[16px] text-white bg-[#00A63E] rounded-[8px] h-[40px]"
                   >
                     <span><i class="fa-solid fa-phone"></i></span> Call
                   </button>
@@ -284,7 +302,7 @@
               </div>
             </div>
             <!-- Fire Service Number -->
-            <div class="shadow-sm background p-8 rounded-sm ">
+            <div class="shadow-sm background p-8 rounded-sm">
               <figure class="flex justify-between items-center">
                 <div class="w-[60px] h-[60px] rounded-2xl bg-[#ffe3e2]">
                   <img class="p-4" src="./assets/fire-service.png" alt="" />
@@ -295,22 +313,25 @@
               </figure>
               <div class="">
                 <div class="mt-4">
-                  <h2 class="text-2xl font-bold">Fire Service Number</h2> 
-                   <p class="text-[#5C5C5C]">Fire Service</p>                 
-
+                  <h2 class="text-2xl font-bold">Fire Service Number</h2>
+                  <p class="text-[#5C5C5C]">Fire Service</p>
                 </div>
                 <div class="mt-6">
-                  <h1 class=" copy-number font-bold text-3xl">999</h1>
-                  <button class="text-[#5C5C5C] rounded-xl bg-[#F2F2F2] py-[6px] px-4">Fire</button> 
+                  <h1 class="copy-number font-bold text-3xl">999</h1>
+                  <button
+                    class="text-[#5C5C5C] rounded-xl bg-[#F2F2F2] py-[6px] px-4"
+                  >
+                    Fire
+                  </button>
                 </div>
                 <div class="flex justify-between gap-2 mt-6">
-                  <button                     
-                    class=" btn copy-btn w-[50%] text-[16px] text-[#5C5C5C] border-1 border-[#D4D6D5] rounded-[8px]  h-[40px]"
+                  <button
+                    class="hover:bg-neutral-700 hover:text-white btn copy-btn w-[50%] text-[16px] text-[#5C5C5C] border-1 border-[#D4D6D5] rounded-[8px] h-[40px]"
                   >
                     <span><i class="fa-solid fa-copy"></i></span> Copy
                   </button>
                   <button
-                    class="call-btn btn w-[50%] text-[16px] text-white bg-[#00A63E] rounded-[8px] h-[40px]"
+                    class="hover:bg-neutral-700 hover:text-white call-btn btn w-[50%] text-[16px] text-white bg-[#00A63E] rounded-[8px] h-[40px]"
                   >
                     <span><i class="fa-solid fa-phone"></i></span> Call
                   </button>
@@ -318,7 +339,7 @@
               </div>
             </div>
             <!-- Anti-Corruption Helpline -->
-            <div class="shadow-sm background p-8 rounded-sm ">
+            <div class="shadow-sm background p-8 rounded-sm">
               <figure class="flex justify-between items-center">
                 <div class="w-[60px] h-[60px] rounded-2xl bg-[#ffe3e2]">
                   <img class="p-4" src="./assets/emergency.png" alt="" />
@@ -329,21 +350,25 @@
               </figure>
               <div class="">
                 <div class="mt-4">
-                  <h2 class="text-2xl font-bold">Anti-Corruption Helpline</h2>      
-                  <p class="text-[#5C5C5C]">Anti-Corruption</p>     
+                  <h2 class="text-2xl font-bold">Anti-Corruption Helpline</h2>
+                  <p class="text-[#5C5C5C]">Anti-Corruption</p>
                 </div>
                 <div class="mt-6">
                   <h1 class="copy-number font-bold text-3xl">106</h1>
-                  <button class="text-[#5C5C5C] rounded-xl bg-[#F2F2F2] py-[6px] px-4">Govt.</button> 
+                  <button
+                    class="text-[#5C5C5C] rounded-xl bg-[#F2F2F2] py-[6px] px-4"
+                  >
+                    Govt.
+                  </button>
                 </div>
                 <div class="flex justify-between gap-2 mt-6">
-                  <button                    
-                    class="btn copy-btn w-[50%] text-[16px] text-[#5C5C5C] border-1 border-[#D4D6D5] rounded-[8px]  h-[40px]"
+                  <button
+                    class="hover:bg-neutral-700 hover:text-white btn copy-btn w-[50%] text-[16px] text-[#5C5C5C] border-1 border-[#D4D6D5] rounded-[8px] h-[40px]"
                   >
                     <span><i class="fa-solid fa-copy"></i></span> Copy
                   </button>
                   <button
-                    class="call-btn btn w-[50%] text-[16px] text-white bg-[#00A63E] rounded-[8px]  h-[40px]"
+                    class="hover:bg-neutral-700 hover:text-white call-btn btn w-[50%] text-[16px] text-white bg-[#00A63E] rounded-[8px] h-[40px]"
                   >
                     <span><i class="fa-solid fa-phone"></i></span> Call
                   </button>
@@ -351,10 +376,14 @@
               </div>
             </div>
             <!-- Bangladesh Railway Helpline  -->
-            <div class="shadow-sm background p-8 rounded-sm ">
+            <div class="shadow-sm background p-8 rounded-sm">
               <figure class="flex justify-between items-center">
                 <div class="w-[60px] h-[60px] rounded-2xl bg-[#ffe3e2]">
-                  <img class="p-4" src="./assets/Bangladesh-Railway.png" alt="" />
+                  <img
+                    class="p-4"
+                    src="./assets/Bangladesh-Railway.png"
+                    alt=""
+                  />
                 </div>
                 <div class="icon-btn cursor-pointer">
                   <i class="fa-regular fa-heart text-2xl"></i>
@@ -362,22 +391,27 @@
               </figure>
               <div class="">
                 <div class="mt-4">
-                  <h2 class="text-2xl font-bold">Bangladesh Railway Helpline </h2>
+                  <h2 class="text-2xl font-bold">
+                    Bangladesh Railway Helpline
+                  </h2>
                   <p class="text-[#5C5C5C]">Bangladesh Railway</p>
                 </div>
                 <div class="mt-6">
                   <h1 class="copy-number font-bold text-3xl">163</h1>
-                  <button class="text-[#5C5C5C] rounded-xl bg-[#F2F2F2] py-[6px] px-4">Travel</button>
+                  <button
+                    class="text-[#5C5C5C] rounded-xl bg-[#F2F2F2] py-[6px] px-4"
+                  >
+                    Travel
+                  </button>
                 </div>
                 <div class="flex justify-between gap-2 mt-6">
                   <button
-                    
-                    class="btn copy-btn w-[50%]  text-[16px] text-[#5C5C5C] border-1 border-[#D4D6D5] rounded-[8px]  h-[40px]"
+                    class="hover:bg-neutral-700 hover:text-white btn copy-btn w-[50%] text-[16px] text-[#5C5C5C] border-1 border-[#D4D6D5] rounded-[8px] h-[40px]"
                   >
                     <span><i class="fa-solid fa-copy"></i></span> Copy
                   </button>
                   <button
-                    class="call-btn btn w-[50%]  text-[16px] text-white bg-[#00A63E] rounded-[8px]"
+                    class="hover:bg-neutral-700 hover:text-white call-btn btn w-[50%] text-[16px] text-white bg-[#00A63E] rounded-[8px]"
                   >
                     <span><i class="fa-solid fa-phone"></i></span> Call
                   </button>
@@ -385,24 +419,27 @@
               </div>
             </div>
           </div>
-          </div>
         </section>
         <!-- Card section Right side -->
-        <aside class="col-span-3  shadow-sm background p-6 rounded-sm ">
-          <div class="flex justify-between items-center">
-            <h1 class="text-[#111111] text-xl font-[500]"><span class="text-[#5C5C5C]"><i class="fa-solid fa-clock"></i> </span>Call History</h1>
-          <div>
-            <button
-              class="py-3 px-9 bg-[#00a63e] rounded-4xl text-white text-xl font-bold"
+        <aside class="col-span-9 md:col-span-3">
+          <section class="">
+            <div
+              class="flex justify-between items-center shadow-sm background p-6 rounded-sm"
             >
-              Clear
-            </button>
-          </div>
-          </div>
-          <div id="cart-history">           
-
-          </div>
-
+              <h1 class="text-[#111111] text-xl font-[500]">
+                <span class="text-[#5C5C5C]"
+                  ><i class="fa-solid fa-clock"></i> </span
+                >Call History
+              </h1>
+              <button
+                id="clear-btn"
+                class="hover:bg-neutral-700 hover:text-white py-3 px-9 bg-[#00a63e] rounded-4xl text-white text-xl font-bold"
+              >
+                Clear
+              </button>
+            </div>
+            <div id="cart-history"></div>
+          </section>
         </aside>
       </section>
     </section>

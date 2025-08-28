@@ -3,7 +3,12 @@
 .hind-madurai {
   font-family: "Hind Madurai";
 }
-.background {
+.background-nav {
+  box-shadow: 0px 1px 50px 0px rgba(181, 181, 181, 0.25);
   background: var(--White, rgba(255, 255, 255, 1));
+}
+.background {
+  border-radius: 12px;
   box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.15);
+  background: var(--White, rgba(255, 255, 255, 1));
 }

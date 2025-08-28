@@ -32,9 +32,8 @@ for (let index = 0; index < copyBtns.length; index++) {
 }
 
 //Call handel
-
+//// get call button all class
 const callBtns = document.getElementsByClassName("call-btn");
-
 for (let callBtn of callBtns) {
   callBtn.addEventListener("click", function () {
     //get service name
@@ -46,10 +45,8 @@ for (let callBtn of callBtns) {
     const callNumber =
       callBtn.parentNode.parentNode.parentNode.childNodes[3].childNodes[3]
         .childNodes[1].innerText;
-
     //get service coin
     const coinIcons = parseInt(document.getElementById("coin").innerText);
-
     // alert
     if (coinIcons <= 0) {
       alert("❌Insufficient Coin you need 20 coin make a call ");
@@ -63,7 +60,6 @@ for (let callBtn of callBtns) {
       date: new Date().toLocaleTimeString("en-US"),
     };
     data.push(dateObject);
-
     //get call history id
     const cartHistory = document.getElementById("cart-history");
     // create call history and show
@@ -77,12 +73,16 @@ for (let callBtn of callBtns) {
               <p class="text-xl  text-[#111111]">${dateObject.date}</p>
               </div>
             </div>
-    
     `;
     cartHistory.append(newHistory);
-
     //create coin icon lass par click
     const currentCoin = coinIcons - 20;
     document.getElementById("coin").innerText = currentCoin;
   });
 }
+
+//// get clear all data
+document.getElementById("clear-btn").addEventListener("click", function () {
+  const cartClear = document.getElementById("cart-history");
+  cartClear.innerHTML = "";
+});
