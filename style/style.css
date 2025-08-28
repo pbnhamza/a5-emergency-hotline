@@ -9,6 +9,6 @@
 }
 .background {
   border-radius: 12px;
-  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.2);
   background: var(--White, rgba(255, 255, 255, 1));
 }
