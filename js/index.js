@@ -1,4 +1,5 @@
 // icon symbol of service
+
 // get icon button all class
 const iconBtns = document.querySelectorAll(".icon-btn");
 //// get Navbar icon button id
@@ -52,7 +53,7 @@ for (let callBtn of callBtns) {
       alert("❌Insufficient Coin you need 20 coin make a call ");
       return;
     } else {
-      alert("📞 Calling " + cartBtnName + " : " + callNumber);
+      alert("📞 Calling " + cartBtnName + "  " + callNumber);
     }
     // create object date
     const data = [];

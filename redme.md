@@ -9,10 +9,10 @@ Ans:-getElementsByClassName:
 2.Return a HTMLCollection of elements.
 
 Ans:-querySelector :
-1.First element that all elements that match a given CSS selector.
+1.First element in the document that match a given CSS selector.
 
 Ans:-querySelectorAll:
-1.javaScript DOM use all elements that matches a specified CSS selector.
+1.javaScript DOM use all document elements that matches a specified CSS selector.
 2.return NodeList
 
 2. How do you **create and insert a new element into the DOM**?
