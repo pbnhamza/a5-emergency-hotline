@@ -6,8 +6,8 @@ A simple and responsive web application that displays emergency hotline informat
 
 ## 🌐 Live Demo
 
-🔗 **Live Site:** *Add your deployed link here*  
-🔗 **Repository:** *Add GitHub repository link here*
+🔗 **Live Site:** [https://pbnhamza.github.io/a5-emergency-hotline/](https://pbnhamza.github.io/a5-emergency-hotline/)  
+
 
 ---
 
